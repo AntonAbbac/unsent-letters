@@ -1,50 +1,55 @@
 # Unsent Letters — Frozen Typewriter ❄️
 
-A dark, icy typewriter theme for [Obsidian](https://obsidian.md). I made it because I wanted a setup that actually helped me write, not just look nice in a screenshot.
+A dark, icy typewriter theme for [Obsidian](https://obsidian.md), built for long writing sessions rather than screenshots.
 
-![preview](preview.png)
-*(replace with an actual screenshot before publishing)*
+![preview](Screenshots/vaultshot.png)
 
-## Why
+## Design goals
 
-I kept switching themes trying to find one that felt good after an hour of writing, not just the first five minutes. Most dark themes are optimized for looking cool, not for staring at them for a long session. So this one focuses on the boring stuff that actually matters:
+Most dark themes are optimized to look good in the first five minutes, not to be stared at for an hour. This theme focuses on the details that matter during a long writing session:
 
-- Monospace typewriter font for the editor — not decorative, just easy to read for a long time
-- Generous line height and spacing so paragraphs don't turn into a wall of text
-- A max content width so lines don't stretch across your whole monitor
-- The line you're currently writing stays highlighted, the rest fades slightly
-- A working zen mode that actually hides the ribbon, tabs and status bar
-- A cursor you can actually see (dark themes are notoriously bad at this)
+- A monospace typewriter font in the editor, chosen for readability over long stretches, not for decoration
+- Generous line height and paragraph spacing to prevent walls of text
+- A max content width so lines don't stretch across a wide monitor
+- The current line stays highlighted while the rest of the text fades slightly
+- A visible cursor — a common weak point in dark themes
+- A working zen mode that actually hides the ribbon, tabs, and status bar
 
 ## Features
 
-- Dark theme, arctic blue-black background, ice-blue accents
-- Focus mode for writing + real zen mode support
-- Everything is configurable from Obsidian's theme settings — colors, fonts, font size, line height, width, etc. No CSS editing needed
-- File explorer with auto color-coded root folders (12 colors, cycles automatically)
-- Extra styling for some plugins I actually use: Kanban, QuickAdd, Notebook Navigator, Banner, Dataview
-- Works fine on mobile
-- Respects reduced motion
-- No external font loading, no Google Fonts, nothing calling out to the internet — just system fonts
+- Dark theme with an arctic blue-black background and ice-blue accents
+- Focus mode for writing, with full zen mode support
+- Fully configurable from Obsidian's theme settings — colors, fonts, font size, line height, content width, and more, no CSS editing required
+- File explorer with automatic color-coded root folders (12 colors, cycling automatically)
+- Dedicated styling for Kanban, QuickAdd, Notebook Navigator, Banner, and Dataview
+- Responsive layout that works on mobile
+- Respects `prefers-reduced-motion`
+- No external font loading or network calls — system fonts only
 
-## Installing
+## Installation
 
 **Manual:**
-1. Download `theme.css`
-2. Put it inside `.obsidian/themes/unsent-letters/theme.css` in your vault
-3. Settings → Appearance → Themes → Manage → pick "Unsent Letters — Frozen Typewriter"
+1. Download `theme.css` and `manifest.json`
+2. Place both files in `.obsidian/themes/unsent-letters/` inside your vault
+3. Go to Settings → Appearance → Themes → Manage, and select "Unsent Letters — Frozen Typewriter"
 
-**Community themes (if it gets published):**
-Search "Unsent Letters" in Settings → Appearance → Themes → Manage.
+**Community themes:**
+Search "Unsent Letters" under Settings → Appearance → Themes → Manage.
 
-## Customizing
+## Customization
 
-Settings → Appearance → Themes → click the gear next to the theme. You can change colors, fonts, font size, line height, width, border radius, transition speed, and the explorer's folder colors — all from the UI.
+Open Settings → Appearance → Themes, then click the gear icon next to the theme. All colors, fonts, font size, line height, content width, border radius, and transition speed — along with the file explorer's folder colors — can be adjusted from the UI, no code required.
 
-## Notes
+## Compatibility
 
-Dark mode only for now, I haven't gotten around to a light version. Tested mostly on desktop. If something looks broken with a plugin I didn't list, open an issue and I'll take a look.
+- Requires Obsidian 1.6.0 or later
+- Dark mode only; a light variant is not currently planned
+- Tested primarily on desktop; mobile layout is supported but less extensively tested
+
+## Contributing
+
+Found a visual bug with a plugin not listed above? Open an issue with a screenshot and the plugin name.
 
 ## License
 
-MIT.
+MIT — see [LICENSE](LICENSE).
