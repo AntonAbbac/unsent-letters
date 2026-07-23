@@ -2,7 +2,7 @@
 
 A dark, icy typewriter theme for [Obsidian](https://obsidian.md), built for long writing sessions rather than screenshots.
 
-![preview](Screenshots/vaultshot.png)
+![preview](Screenshots/main.png)
 
 ## Design goals
 
