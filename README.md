@@ -26,30 +26,6 @@ Most dark themes are optimized to look good in the first five minutes, not to be
 - Respects `prefers-reduced-motion`
 - No external font loading or network calls — system fonts only
 
-## Installation
-
-**Manual:**
-1. Download `theme.css` and `manifest.json`
-2. Place both files in `.obsidian/themes/unsent-letters/` inside your vault
-3. Go to Settings → Appearance → Themes → Manage, and select "Unsent Letters — Frozen Typewriter"
-
-**Community themes:**
-Search "Unsent Letters" under Settings → Appearance → Themes → Manage.
-
-## Customization
-
-Open Settings → Appearance → Themes, then click the gear icon next to the theme. All colors, fonts, font size, line height, content width, border radius, and transition speed — along with the file explorer's folder colors — can be adjusted from the UI, no code required.
-
-## Compatibility
-
-- Requires Obsidian 1.6.0 or later
-- Dark mode only; a light variant is not currently planned
-- Tested primarily on desktop; mobile layout is supported but less extensively tested
-
-## Contributing
-
-Found a visual bug with a plugin not listed above? Open an issue with a screenshot and the plugin name.
-
 ## License
 
 MIT — see [LICENSE](LICENSE).

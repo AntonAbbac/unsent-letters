@@ -856,7 +856,7 @@ button.mod-warning { border-color: rgba(240, 128, 128, 0.45); color: var(--ul2-d
 }
 .task-list-item.is-checked {
   color:           rgba(140, 175, 205, 0.50);
-  text-decoration: line-through rgba(140, 175, 205, 0.35);
+  text-decoration: line-through;
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -1170,11 +1170,13 @@ button.mod-warning { border-color: rgba(240, 128, 128, 0.45); color: var(--ul2-d
    ACESSIBILIDADE & MOBILE
    ══════════════════════════════════════════════════════════════ */
 
-/* Única exceção intencional a !important neste arquivo: sem ele,
-   transições definidas por outros plugins não seriam desativadas,
-   e o suporte a prefers-reduced-motion ficaria incompleto. */
+/* Desativa as transições e animações definidas por este tema.
+   Não alcança CSS de terceiros — isso exigiria !important. */
 @media (prefers-reduced-motion: reduce) {
-  * { transition-duration: 0ms !important; animation-duration: 0ms !important; }
+  :root {
+    --ul2-transition-speed: 0ms;
+  }
+  * { transition-duration: 0ms; animation-duration: 0ms; }
 }
 
 @media screen and (max-width: 768px) {
@@ -1182,4 +1184,5 @@ button.mod-warning { border-color: rgba(240, 128, 128, 0.45); color: var(--ul2-d
     --ul2-font-size: 15px;
     --ul2-max-width: 100%;
   }
-  .kanban-plugin__lane { min-width: 220px; max-width: desati�───�
+  .kanban-plugin__lane { min-width: 220px; max-width: 260px; }
+}
