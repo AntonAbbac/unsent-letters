@@ -4,6 +4,11 @@ A dark, icy typewriter theme for [Obsidian](https://obsidian.md), built for long
 
 ![preview](Screenshots/main.png)
 
+## Dark
+<img src="./Screenshots/Dark.png" style="margin-bottom: 15px;"/> <br>
+## Light
+<img src="./Screenshots/Light.png" style="margin-bottom: 15px;"/> <br>
+
 ## Design goals
 
 Most dark themes are optimized to look good in the first five minutes, not to be stared at for an hour. This theme focuses on the details that matter during a long writing session:
@@ -17,7 +22,7 @@ Most dark themes are optimized to look good in the first five minutes, not to be
 
 ## Features
 
-- Dark theme with an arctic blue-black background and ice-blue accents
+- Dark theme with an arctic blue-black background and ice-blue accents, plus a light theme with a warm palette (pink, gold, wine)
 - Focus mode for writing, with full zen mode support
 - Fully configurable from Obsidian's theme settings — colors, fonts, font size, line height, content width, and more, no CSS editing required
 - File explorer with automatic color-coded root folders (12 colors, cycling automatically)
