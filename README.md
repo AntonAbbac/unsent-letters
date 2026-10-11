@@ -1,43 +1,75 @@
-# Unsent Letters — Frozen Typewriter ❄️
+# Unsent Letters — Frozen Typewriter
 
-A dark, icy typewriter theme for [Obsidian](https://obsidian.md).
+A dark, icy theme for [Obsidian](https://obsidian.md), designed for long writing sessions. It pairs a low-glare arctic palette with typewriter-style headings, focus tools and a fully configurable interface.
 
-![preview](Screenshots/Main.png)
+![Preview](Screenshots/Main.png)
 
-## Why I made this
+## Overview
 
-I write at night, long sessions, and I got tired of themes that look great in the first screenshot and wear on your eyes twenty minutes in. I wanted something built for staring at, not for looking good in a tweet.
+Unsent Letters is built for sustained drafting rather than first impressions. The defaults favor readability after hours of use: generous line height, a constrained content width, soft contrast, and writing aids that keep attention on the current line.
 
-So most of the work went into small things that only matter after the first hour. A monospace typewriter font in the editor, generous line height, a max content width so lines don't stretch across a wide monitor. The line you're on stays sharp while the rest of the paragraph dims and blurs slightly, so your eyes always know where you left off. The cursor doesn't just blink on and off — it breathes, a smooth fade instead of a hard flicker, so it reads as alive instead of a dead line sitting on the page.
+## Features
 
-I also wired up typewriter scrolling: the active line stays vertically centered in the pane, like a physical typewriter carriage, so the page moves instead of your eyes. And there's a very faint paper-grain texture over the editor — almost invisible, just enough that it doesn't feel like staring at a bare screen.
+### Writing experience
 
-## Little things for actual drafting
+- **Focus mode:** inactive lines dim and blur slightly while the active line stays sharp.
+- **Breathing cursor:** a smooth opacity fade replaces the hard on/off blink.
+- **Typewriter scrolling:** extra vertical padding lets the active line stay centered in the pane, like a typewriter carriage. Works with Obsidian's typewriter scroll setting.
+- **Paper grain:** a barely visible noise layer over the editor surface.
+- **Zen mode:** hides the tab bar, ribbon and status bar completely.
+- **Readable layout:** configurable maximum content width, line height and letter spacing.
 
-A few details came from writing fiction specifically, not just "text":
+### Drafting tools
 
-- **Dialogue gets tinted.** Anything in quotes picks up a warm highlight color so spoken lines are scannable at a glance while you're revising.
-- **Draft comments stand apart.** Obsidian's `%% comment %%` syntax gets its own quiet color and background, so notes-to-self read as clearly separate from the manuscript.
-- Both are configurable colors, in case the defaults don't fit your palette.
+- **Dialogue highlighting:** text wrapped in `<q>` elements receives a configurable warm tint.
+- **Draft comments:** Obsidian `%% comment %%` syntax gets its own color and background, separating notes-to-self from the manuscript.
 
-## Two palettes, fully configurable
+### Interface
 
-Dark is an arctic blue-black with ice-blue accents — the one I actually use. There's also a light palette with a warmer tone (pink, gold, wine) for when the sun's on the screen and dark mode turns into a mirror.
+- Styled callouts (all built-in types), tags, tables, code blocks, blockquotes, task checkboxes, buttons, modals and the quick switcher.
+- A single-accent file explorer with consistent hover and active states.
+- Alternative styles for callouts (tinted box, left bar, outline) and links (border underline, text underline, none).
 
-Everything that matters is exposed in Obsidian's theme settings — background, accent, fonts, font size, line height, content width, border radius, transition speed, even the focus-mode dim/blur amount and the dialogue/comment colors — no CSS editing required. I built it that way because I'm the kind of person who keeps tweaking these numbers depending on the project.
+## Palettes
 
-## Focus mode and zen mode
+| Palette                    | Description                                           |
+| -------------------------- | ----------------------------------------------------- |
+| **Dark** (default)         | Arctic blue-black surfaces with ice-blue accents.     |
+| **Light** ("Killer Queen") | Warm cream surfaces with pink, gold and wine accents. |
 
-Focus mode dims and slightly blurs every line except the one you're on. Zen mode goes further and actually hides the tab bar, the ribbon, and the status bar — not just visually collapsed, gone — so there's nothing but the page.
+Each palette is configured independently.
 
-## The rest
+## Customization
 
-- Styled callouts, tags, tables, code blocks, blockquotes, buttons, modals, and the search/quick-switcher popup, so the whole app feels consistent, not just the editor
-- A quiet, single-accent file explorer — hover and active states use the same accent color as the rest of the theme, nothing flashy
-- Respects `prefers-reduced-motion` — animations and the breathing cursor turn off
-- Responsive on mobile — smaller base font size, full-width content below 768px
-- No external font loading, no `@import`, no network calls — system and bundled font stacks only
+All options are exposed through the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, with no CSS editing required. Settings are grouped into collapsible sections:
+
+| Section              | Includes                                                                                                                              |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Colors**           | Surfaces, accent, frost tint, text, links, borders, status colors, headings, code syntax, shadows. Set separately for light and dark. |
+| **Typography**       | Prose, monospace, UI and heading fonts; size, weight, line height, letter spacing, alignment, hyphenation.                            |
+| **Headings**         | Size, weight and letter spacing per level; text transform; H1 underline.                                                              |
+| **Layout & motion**  | Content width, padding, border radii, scrollbar width, transition speed and easing.                                                   |
+| **Writing aids**     | Focus dim and blur, cursor, typewriter padding, paper grain, dialogue and comment colors.                                             |
+| **Content elements** | Links, blockquotes, code, callouts, tags, tables and tasks.                                                                           |
+| **Interface**        | Tabs, file explorer, status bar, buttons and modals.                                                                                  |
+| **Features**         | Toggles for focus dimming, breathing cursor, paper grain, pane frame, hover effects, status bar and ribbon.                           |
+
+## Installation
+
+Style Settings is optional but required to change the defaults.
+
+1. Open your vault folder and go to `.obsidian/themes/`.
+2. Create a folder named `Unsent Letters`.
+3. Copy `theme.css` and `manifest.json` into it.
+4. In Obsidian, open **Settings → Appearance → Themes** and select **Unsent Letters**.
+5. Optionally install **Style Settings** from Community plugins to customize the theme.
+
+## Accessibility and performance
+
+- Respects `prefers-reduced-motion`: transitions and the breathing cursor are disabled.
+- Responsive layout: smaller base font size and full-width content below 768px.
+- No `@import`, no network requests and no bundled fonts. The theme uses system font stacks only, and any font you name in the settings must be installed locally.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
