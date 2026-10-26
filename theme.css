@@ -4,6 +4,28 @@ name: Unsent Letters — Frozen Typewriter
 id: unsent-letters
 settings:
 
+  - id: ul2-g-presets
+    title: "Color presets"
+    type: heading
+    level: 1
+    collapsed: false
+
+  - id: ul2-preset
+    title: "Color preset"
+    description: "Every preset has a dark and a light variant and follows Obsidian's Appearance setting. A preset replaces the whole palette. To fine-tune colors by hand, use the Frozen Typewriter preset and the pickers below."
+    type: class-select
+    allowEmpty: false
+    default: "ul2-preset-frost"
+    options:
+      - label: "Frozen Typewriter - icy blue / warm paper (default)"
+        value: "ul2-preset-frost"
+      - label: "Strawberry - soft pinks"
+        value: "ul2-preset-strawberry"
+      - label: "Purple-haze - intense purple"
+        value: "ul2-preset-purplehaze"
+      - label: "Blackout - all dark & grey"
+        value: "ul2-preset-blackout"
+
   - id: ul2-g-colors
     title: "Colors"
     type: heading
@@ -76,7 +98,7 @@ settings:
     format: hex
     opacity: true
     default-light: '#7d5512'
-    default-dark: '#c8e8ff'
+    default-dark: '#bddcf2'
 
   - id: ul2-accent-rgb
     title: "Accent (RGB, for translucent UI)"
@@ -120,40 +142,40 @@ settings:
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#2a1a22'
-    default-dark: '#ddeeff'
+    default-light: '#38282f'
+    default-dark: '#c5d6e6'
 
   - id: ul2-text-muted
     title: "Muted text"
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#3a262ead'
-    default-dark: '#b4d2ebad'
+    default-light: '#3a262ec2'
+    default-dark: '#b4d2ebb2'
 
   - id: ul2-text-faint
     title: "Faint text"
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#5a414b80'
-    default-dark: '#8cafcd80'
+    default-light: '#5a414bbd'
+    default-dark: '#8cafcdad'
 
   - id: ul2-bold-color
     title: "Bold text"
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#2a1a22fa'
-    default-dark: '#dcf2fffa'
+    default-light: '#2a1a22'
+    default-dark: '#c5dae6'
 
   - id: ul2-italic-color
     title: "Italic text"
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#3c2630e6'
-    default-dark: '#c4e4fce6'
+    default-light: '#3c2630eb'
+    default-dark: '#c4e4fcdb'
 
   - id: ul2-highlight-bg
     title: "Highlight (==mark==) background"
@@ -198,8 +220,8 @@ settings:
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#5a414b8c'
-    default-dark: '#8cafd28c'
+    default-light: '#5a414bbd'
+    default-dark: '#8cafd2ad'
 
   - id: ul2-tag-color
     title: "Tag color"
@@ -290,7 +312,7 @@ settings:
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#1f8a6f'
+    default-light: '#1b7962'
     default-dark: '#7de8d8'
 
   - id: ul2-aurora-violet
@@ -306,7 +328,7 @@ settings:
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#b8862f'
+    default-light: '#896423'
     default-dark: '#f0d87a'
 
   - id: ul2-danger
@@ -322,7 +344,7 @@ settings:
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#3d7a4f'
+    default-light: '#3c774d'
     default-dark: '#80e8c0'
 
   - id: ul2-g-writingcolors
@@ -336,7 +358,7 @@ settings:
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#f0d87a'
+    default-light: '#896423'
     default-dark: '#f0d87a'
 
   - id: ul2-comment-color
@@ -344,7 +366,7 @@ settings:
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#7de8d8'
+    default-light: '#1b7962'
     default-dark: '#7de8d8'
 
   - id: ul2-g-headingcolors
@@ -359,7 +381,7 @@ settings:
     format: hex
     opacity: true
     default-light: '#2a1a22'
-    default-dark: '#dcf4ff'
+    default-dark: '#c4dae5'
 
   - id: ul2-h2-color
     title: "H2"
@@ -367,30 +389,30 @@ settings:
     format: hex
     opacity: true
     default-light: '#a3283ff0'
-    default-dark: '#c8e8fcf5'
+    default-dark: '#c8e8fce0'
 
   - id: ul2-h3-color
     title: "H3"
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#b8862ff2'
-    default-dark: '#b9daf5e6'
+    default-light: '#896423'
+    default-dark: '#b9daf5de'
 
   - id: ul2-h4-color
     title: "H4"
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#5a414bd9'
-    default-dark: '#a8d2f0d1'
+    default-light: '#5a414bf0'
+    default-dark: '#a8d2f0c4'
 
   - id: ul2-h5-color
     title: "H5"
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#5a414bbf'
+    default-light: '#5a414be0'
     default-dark: '#9bc6e6bf'
 
   - id: ul2-h6-color
@@ -398,8 +420,8 @@ settings:
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#5a414ba6'
-    default-dark: '#8cb9daad'
+    default-light: '#5a414bcf'
+    default-dark: '#8cb9dab8'
 
   - id: ul2-g-codecolors
     title: "Code colors"
@@ -412,8 +434,8 @@ settings:
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#2a1a22e0'
-    default-dark: '#dcf0ffe0'
+    default-light: '#2a1a22e6'
+    default-dark: '#dcf0ffd6'
 
   - id: ul2-code-background
     title: "Code background"
@@ -428,8 +450,8 @@ settings:
     type: variable-themed-color
     format: hex
     opacity: true
-    default-light: '#5a414b8c'
-    default-dark: '#8cafcd8c'
+    default-light: '#5a414bc4'
+    default-dark: '#8cafcdb5'
 
   - id: ul2-code-tag
     title: "Code tag"
@@ -569,7 +591,7 @@ settings:
   - id: ul2-typewriter-font
     title: "Monospace font (code, tables)"
     type: variable-text
-    default: "'Courier New', 'IBM Plex Mono', Consolas, monospace"
+    default: "'IBM Plex Mono', 'Courier Prime', 'Courier New', Consolas, monospace"
 
   - id: ul2-ui-font
     title: "UI font"
@@ -579,7 +601,7 @@ settings:
   - id: ul2-heading-font
     title: "Heading font"
     type: variable-text
-    default: "'Courier New', Consolas, monospace"
+    default: "'Courier Prime', 'IBM Plex Mono', 'Courier New', Consolas, monospace"
 
   - id: ul2-g-body
     title: "Body text"
@@ -590,7 +612,7 @@ settings:
   - id: ul2-font-size
     title: "Font size"
     type: variable-number-slider
-    default: 16
+    default: 17
     min: 13
     max: 24
     step: 1
@@ -599,7 +621,7 @@ settings:
   - id: ul2-line-height
     title: "Line height"
     type: variable-number-slider
-    default: 1.85
+    default: 1.7
     min: 1.4
     max: 2.6
     step: 0.05
@@ -607,7 +629,7 @@ settings:
   - id: ul2-letter-spacing
     title: "Letter spacing (body)"
     type: variable-number-slider
-    default: 0.005
+    default: 0.01
     min: 0
     max: 0.12
     step: 0.005
@@ -928,7 +950,7 @@ settings:
   - id: ul2-max-width
     title: "Content max width"
     type: variable-number-slider
-    default: 760
+    default: 680
     min: 480
     max: 1400
     step: 20
@@ -1000,7 +1022,7 @@ settings:
   - id: ul2-ease-settle
     title: "Transition easing"
     type: variable-select
-    default: "cubic-bezier(0.34, 1.56, 0.64, 1)"
+    default: "ease-out"
     options:
       - label: "Bounce"
         value: "cubic-bezier(0.34, 1.56, 0.64, 1)"
@@ -1028,7 +1050,7 @@ settings:
   - id: ul2-focus-blur
     title: "Focus mode: inactive line blur"
     type: variable-number-slider
-    default: 0.6
+    default: 0
     min: 0
     max: 2.5
     step: 0.1
@@ -1081,7 +1103,7 @@ settings:
   - id: ul2-grain-opacity
     title: "Paper grain opacity"
     type: variable-number-slider
-    default: 0.025
+    default: 0.015
     min: 0
     max: 0.15
     step: 0.005
@@ -1703,6 +1725,40 @@ settings:
     step: 0.005
     format: "em"
 
+  - id: ul2-g-icons
+    title: "Icons"
+    type: heading
+    level: 1
+    collapsed: true
+
+  - id: ul2-icons-info
+    title: "Callout icons"
+    description: "Use `> [!typewriter]` (aliases `draft`, `manuscript`) and `> [!snowflake]` (aliases `frost`, `winter`) in your notes."
+    type: info-text
+    markdown: true
+
+  - id: ul2-title-icon
+    title: "Note title icon"
+    description: "Small icon shown before the inline note title."
+    type: class-select
+    allowEmpty: false
+    default: "ul2-title-icon-typewriter"
+    options:
+      - label: "Typewriter"
+        value: "ul2-title-icon-typewriter"
+      - label: "Snowflake"
+        value: "ul2-title-icon-snowflake"
+      - label: "None"
+        value: "ul2-title-icon-none"
+
+  - id: ul2-no-hr-snowflake
+    title: "Disable snowflake on horizontal rules (scene break)"
+    type: class-toggle
+
+  - id: ul2-no-statusbar-icon
+    title: "Disable typewriter icon in the word count"
+    type: class-toggle
+
   - id: ul2-g-toggles
     title: "Features"
     type: heading
@@ -1749,12 +1805,14 @@ settings:
 :root {
     --ul2-prose-font:
         "Literata", "Charter", "Georgia", "Iowan Old Style", serif;
-    --ul2-typewriter-font: "Courier New", "IBM Plex Mono", Consolas, monospace;
+    --ul2-typewriter-font:
+        "IBM Plex Mono", "Courier Prime", "Courier New", Consolas, monospace;
     --ul2-ui-font: -apple-system, "Segoe UI", system-ui, sans-serif;
-    --ul2-heading-font: "Courier New", Consolas, monospace;
-    --ul2-font-size: 16px;
-    --ul2-line-height: 1.85;
-    --ul2-letter-spacing: 0.005em;
+    --ul2-heading-font:
+        "Courier Prime", "IBM Plex Mono", "Courier New", Consolas, monospace;
+    --ul2-font-size: 17px;
+    --ul2-line-height: 1.7;
+    --ul2-letter-spacing: 0.01em;
     --ul2-prose-weight: 400;
     --ul2-bold-weight: 600;
     --ul2-paragraph-spacing: 0.9em;
@@ -1787,7 +1845,7 @@ settings:
     --ul2-h1-gap: 0.6em;
     --ul2-inline-title-size: 2em;
     --ul2-inline-title-spacing: 0.04em;
-    --ul2-max-width: 760px;
+    --ul2-max-width: 680px;
     --ul2-content-padding: 1.5em;
     --ul2-zen-narrowing: 40px;
     --ul2-border-radius: 6px;
@@ -1795,15 +1853,15 @@ settings:
     --ul2-radius-xs: 3px;
     --ul2-scrollbar-width: 6px;
     --ul2-transition-speed: 140ms;
-    --ul2-ease-settle: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --ul2-ease-settle: ease-out;
     --ul2-focus-dim-opacity: 0.72;
-    --ul2-focus-blur: 0.6px;
+    --ul2-focus-blur: 0px;
     --ul2-typewriter-padding: 40vh;
     --ul2-zen-typewriter-padding: 38vh;
     --ul2-cursor-width: 2.5px;
     --ul2-cursor-speed: 1.6s;
     --ul2-cursor-min-opacity: 0.25;
-    --ul2-grain-opacity: 0.025;
+    --ul2-grain-opacity: 0.015;
     --ul2-grain-blend: overlay;
     --ul2-comment-style: italic;
     --ul2-link-border-width: 1px;
@@ -1861,6 +1919,8 @@ settings:
     --ul2-button-bg-strength: 14%;
     --ul2-suggestion-strength: 12%;
     --ul2-modal-title-spacing: 0.03em;
+    --ul2-icon-typewriter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='7' y='2.5' width='10' height='6.5' rx='1'/%3E%3Cpath d='M9.5 5.2h5M9.5 7.2h3'/%3E%3Cpath d='M4 10.6h16'/%3E%3Crect x='3' y='11.8' width='18' height='9.2' rx='2.2'/%3E%3Cpath d='M7 15.4h.01M10.3 15.4h.01M13.7 15.4h.01M17 15.4h.01M8 18.3h8'/%3E%3C/svg%3E");
+    --ul2-icon-snowflake: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 12L12.0 1.8M12.0 5.6L14.4 3.7M12.0 5.6L9.6 3.7M12 12L3.2 6.9M6.5 8.8L6.0 5.7M6.5 8.8L3.6 10.0M12 12L3.2 17.1M6.5 15.2L3.6 14.0M6.5 15.2L6.0 18.3M12 12L12.0 22.2M12.0 18.4L9.6 20.3M12.0 18.4L14.4 20.3M12 12L20.8 17.1M17.5 15.2L18.0 18.3M17.5 15.2L20.4 14.0M12 12L20.8 6.9M17.5 8.8L20.4 10.0M17.5 8.8L18.0 5.7'/%3E%3C/svg%3E");
 }
 
 .theme-dark {
@@ -1870,17 +1930,17 @@ settings:
     --ul2-bg-3: #1c2d40;
     --ul2-bg-4: #243448;
     --ul2-accent-color: #a8d8f0;
-    --ul2-frost-color: #c8e8ff;
+    --ul2-frost-color: #bddcf2;
     --ul2-accent-rgb: 168, 216, 240;
     --ul2-caret-color: var(--ul2-frost-color);
-    --ul2-text-normal: #ddeeff;
-    --ul2-text-muted: rgba(180, 210, 235, 0.68);
-    --ul2-text-faint: rgba(140, 175, 205, 0.5);
-    --ul2-bold-color: rgba(220, 242, 255, 0.98);
-    --ul2-italic-color: rgba(196, 228, 252, 0.9);
+    --ul2-text-normal: #c5d6e6;
+    --ul2-text-muted: rgba(180, 210, 235, 0.7);
+    --ul2-text-faint: rgba(140, 175, 205, 0.68);
+    --ul2-bold-color: #c5dae6;
+    --ul2-italic-color: rgba(196, 228, 252, 0.86);
     --ul2-highlight-bg: rgba(168, 216, 240, 0.18);
     --ul2-link-external: rgba(186, 228, 255, 0.88);
-    --ul2-link-unresolved: rgba(140, 175, 210, 0.55);
+    --ul2-link-unresolved: rgba(140, 175, 210, 0.68);
     --ul2-border-faint: rgba(100, 160, 210, 0.18);
     --ul2-border-soft: rgba(120, 180, 230, 0.32);
     --ul2-border-glow: rgba(168, 216, 240, 0.5);
@@ -1894,15 +1954,15 @@ settings:
     --ul2-success: #80e8c0;
     --ul2-dialogue-color: #f0d87a;
     --ul2-comment-color: #7de8d8;
-    --ul2-h1-color: rgba(220, 244, 255, 1);
-    --ul2-h2-color: rgba(200, 232, 252, 0.96);
-    --ul2-h3-color: rgba(185, 218, 245, 0.9);
-    --ul2-h4-color: rgba(168, 210, 240, 0.82);
+    --ul2-h1-color: #c4dae5;
+    --ul2-h2-color: rgba(200, 232, 252, 0.88);
+    --ul2-h3-color: rgba(185, 218, 245, 0.87);
+    --ul2-h4-color: rgba(168, 210, 240, 0.77);
     --ul2-h5-color: rgba(155, 198, 230, 0.75);
-    --ul2-h6-color: rgba(140, 185, 218, 0.68);
-    --ul2-code-normal: rgba(220, 240, 255, 0.88);
+    --ul2-h6-color: rgba(140, 185, 218, 0.72);
+    --ul2-code-normal: rgba(220, 240, 255, 0.84);
     --ul2-code-background: rgba(168, 216, 240, 0.08);
-    --ul2-code-comment: rgba(140, 175, 205, 0.55);
+    --ul2-code-comment: rgba(140, 175, 205, 0.71);
     --ul2-code-string: rgba(200, 235, 200, 0.82);
     --ul2-code-function: rgba(160, 210, 255, 0.9);
     --ul2-code-property: rgba(168, 216, 240, 0.8);
@@ -1921,36 +1981,36 @@ settings:
     --ul2-frost-color: #7d5512;
     --ul2-accent-rgb: 214, 61, 118;
     --ul2-caret-color: var(--ul2-accent-color);
-    --ul2-text-normal: #2a1a22;
-    --ul2-text-muted: rgba(58, 38, 46, 0.68);
-    --ul2-text-faint: rgba(90, 65, 75, 0.5);
-    --ul2-bold-color: rgba(42, 26, 34, 0.98);
-    --ul2-italic-color: rgba(60, 38, 48, 0.9);
+    --ul2-text-normal: #38282f;
+    --ul2-text-muted: rgba(58, 38, 46, 0.76);
+    --ul2-text-faint: rgba(90, 65, 75, 0.74);
+    --ul2-bold-color: #2a1a22;
+    --ul2-italic-color: rgba(60, 38, 48, 0.92);
     --ul2-highlight-bg: rgba(214, 61, 118, 0.16);
     --ul2-link-external: rgba(163, 40, 63, 0.85);
-    --ul2-link-unresolved: rgba(90, 65, 75, 0.55);
+    --ul2-link-unresolved: rgba(90, 65, 75, 0.74);
     --ul2-border-faint: rgba(184, 134, 47, 0.22);
     --ul2-border-soft: rgba(184, 134, 47, 0.38);
     --ul2-border-glow: rgba(214, 61, 118, 0.55);
     --ul2-ice-faint: rgba(214, 61, 118, 0.06);
     --ul2-ice-soft: rgba(214, 61, 118, 0.13);
     --ul2-ice-medium: rgba(214, 61, 118, 0.26);
-    --ul2-aurora-teal: #1f8a6f;
+    --ul2-aurora-teal: #1b7962;
     --ul2-aurora-violet: #7a4fa0;
-    --ul2-aurora-amber: #b8862f;
+    --ul2-aurora-amber: #896423;
     --ul2-danger: #a3283f;
-    --ul2-success: #3d7a4f;
-    --ul2-dialogue-color: #f0d87a;
-    --ul2-comment-color: #7de8d8;
-    --ul2-h1-color: rgba(42, 26, 34, 1);
+    --ul2-success: #3c774d;
+    --ul2-dialogue-color: #896423;
+    --ul2-comment-color: #1b7962;
+    --ul2-h1-color: #2a1a22;
     --ul2-h2-color: rgba(163, 40, 63, 0.94);
-    --ul2-h3-color: rgba(184, 134, 47, 0.95);
-    --ul2-h4-color: rgba(90, 65, 75, 0.85);
-    --ul2-h5-color: rgba(90, 65, 75, 0.75);
-    --ul2-h6-color: rgba(90, 65, 75, 0.65);
-    --ul2-code-normal: rgba(42, 26, 34, 0.88);
+    --ul2-h3-color: #896423;
+    --ul2-h4-color: rgba(90, 65, 75, 0.94);
+    --ul2-h5-color: rgba(90, 65, 75, 0.88);
+    --ul2-h6-color: rgba(90, 65, 75, 0.81);
+    --ul2-code-normal: rgba(42, 26, 34, 0.9);
     --ul2-code-background: rgba(184, 134, 47, 0.08);
-    --ul2-code-comment: rgba(90, 65, 75, 0.55);
+    --ul2-code-comment: rgba(90, 65, 75, 0.77);
     --ul2-code-string: rgba(61, 122, 79, 0.82);
     --ul2-code-function: rgba(163, 40, 63, 0.85);
     --ul2-code-property: rgba(214, 61, 118, 0.75);
@@ -2094,6 +2154,294 @@ settings:
     --h6-weight: var(--ul2-h6-weight);
 }
 
+body:not(#ul2).ul2-preset-strawberry.theme-dark {
+    --ul2-base-bg: #1d1418;
+    --ul2-bg-1: #231920;
+    --ul2-bg-2: #2a1e25;
+    --ul2-bg-3: #35262e;
+    --ul2-bg-4: #423038;
+    --ul2-accent-color: #f4a6bb;
+    --ul2-frost-color: #ffc6d3;
+    --ul2-accent-rgb: 244, 166, 187;
+    --ul2-caret-color: var(--ul2-frost-color);
+    --ul2-text-normal: #dccbcf;
+    --ul2-text-muted: rgba(220, 203, 207, 0.69);
+    --ul2-text-faint: rgba(220, 203, 207, 0.54);
+    --ul2-bold-color: #dccbcf;
+    --ul2-italic-color: rgba(220, 203, 207, 0.94);
+    --ul2-highlight-bg: rgba(244, 166, 187, 0.18);
+    --ul2-link-external: rgba(244, 166, 187, 0.92);
+    --ul2-link-unresolved: rgba(220, 203, 207, 0.54);
+    --ul2-border-faint: rgba(224, 138, 164, 0.2);
+    --ul2-border-soft: rgba(224, 138, 164, 0.36);
+    --ul2-border-glow: rgba(244, 166, 187, 0.55);
+    --ul2-ice-faint: rgba(244, 166, 187, 0.06);
+    --ul2-ice-soft: rgba(244, 166, 187, 0.14);
+    --ul2-ice-medium: rgba(244, 166, 187, 0.28);
+    --ul2-aurora-teal: #8fd9c0;
+    --ul2-aurora-violet: #d0aef2;
+    --ul2-aurora-amber: #f1d08a;
+    --ul2-danger: #f58f8f;
+    --ul2-success: #a0dcae;
+    --ul2-dialogue-color: #f1d08a;
+    --ul2-comment-color: #8fd9c0;
+    --ul2-h1-color: #dccbcf;
+    --ul2-h2-color: rgba(244, 166, 187, 0.96);
+    --ul2-h3-color: rgba(255, 198, 211, 0.94);
+    --ul2-h4-color: rgba(220, 203, 207, 0.76);
+    --ul2-h5-color: rgba(220, 203, 207, 0.69);
+    --ul2-h6-color: rgba(220, 203, 207, 0.61);
+    --ul2-code-normal: rgba(220, 203, 207, 0.9);
+    --ul2-code-background: rgba(244, 166, 187, 0.08);
+    --ul2-code-comment: rgba(220, 203, 207, 0.57);
+    --ul2-code-string: rgba(160, 220, 174, 0.92);
+    --ul2-code-function: rgba(244, 166, 187, 0.94);
+    --ul2-code-property: rgba(244, 166, 187, 0.84);
+    --ul2-shadow-s-color: rgba(6, 2, 4, 0.55);
+    --ul2-shadow-m-color: rgba(6, 2, 4, 0.68);
+    --ul2-shadow-l-color: rgba(6, 2, 4, 0.82);
+}
+
+body:not(#ul2).ul2-preset-strawberry.theme-light {
+    --ul2-base-bg: #fcf1f3;
+    --ul2-bg-1: #f8e7ea;
+    --ul2-bg-2: #f4dce1;
+    --ul2-bg-3: #eecbd3;
+    --ul2-bg-4: #e6b9c4;
+    --ul2-accent-color: #a72e4f;
+    --ul2-frost-color: #8f3a55;
+    --ul2-accent-rgb: 167, 46, 79;
+    --ul2-caret-color: var(--ul2-accent-color);
+    --ul2-text-normal: #41292f;
+    --ul2-text-muted: rgba(65, 41, 47, 0.77);
+    --ul2-text-faint: rgba(65, 41, 47, 0.65);
+    --ul2-bold-color: #41292f;
+    --ul2-italic-color: rgba(65, 41, 47, 0.94);
+    --ul2-highlight-bg: rgba(167, 46, 79, 0.16);
+    --ul2-link-external: rgba(157, 44, 75, 0.92);
+    --ul2-link-unresolved: rgba(65, 41, 47, 0.65);
+    --ul2-border-faint: rgba(196, 118, 138, 0.24);
+    --ul2-border-soft: rgba(196, 118, 138, 0.4);
+    --ul2-border-glow: rgba(167, 46, 79, 0.55);
+    --ul2-ice-faint: rgba(167, 46, 79, 0.06);
+    --ul2-ice-soft: rgba(167, 46, 79, 0.13);
+    --ul2-ice-medium: rgba(167, 46, 79, 0.26);
+    --ul2-aurora-teal: #2d7761;
+    --ul2-aurora-violet: #885999;
+    --ul2-aurora-amber: #916012;
+    --ul2-danger: #b3262f;
+    --ul2-success: #3c7646;
+    --ul2-dialogue-color: #916012;
+    --ul2-comment-color: #2d7761;
+    --ul2-h1-color: #41292f;
+    --ul2-h2-color: rgba(167, 46, 79, 0.96);
+    --ul2-h3-color: rgba(143, 58, 85, 0.94);
+    --ul2-h4-color: rgba(65, 41, 47, 0.82);
+    --ul2-h5-color: rgba(65, 41, 47, 0.77);
+    --ul2-h6-color: rgba(65, 41, 47, 0.71);
+    --ul2-code-normal: rgba(65, 41, 47, 0.9);
+    --ul2-code-background: rgba(167, 46, 79, 0.07);
+    --ul2-code-comment: rgba(65, 41, 47, 0.68);
+    --ul2-code-string: rgba(60, 118, 70, 0.92);
+    --ul2-code-function: rgba(167, 46, 79, 0.94);
+    --ul2-code-property: rgba(167, 46, 79, 0.84);
+    --ul2-shadow-s-color: rgba(120, 50, 70, 0.14);
+    --ul2-shadow-m-color: rgba(120, 50, 70, 0.18);
+    --ul2-shadow-l-color: rgba(120, 50, 70, 0.24);
+}
+
+body:not(#ul2).ul2-preset-purplehaze.theme-dark {
+    --ul2-base-bg: #140c22;
+    --ul2-bg-1: #1a102d;
+    --ul2-bg-2: #211538;
+    --ul2-bg-3: #2b1d4a;
+    --ul2-bg-4: #372860;
+    --ul2-accent-color: #b48cff;
+    --ul2-frost-color: #d9c2ff;
+    --ul2-accent-rgb: 180, 140, 255;
+    --ul2-caret-color: var(--ul2-frost-color);
+    --ul2-text-normal: #cec6de;
+    --ul2-text-muted: rgba(206, 198, 222, 0.7);
+    --ul2-text-faint: rgba(206, 198, 222, 0.56);
+    --ul2-bold-color: #cec6de;
+    --ul2-italic-color: rgba(206, 198, 222, 0.94);
+    --ul2-highlight-bg: rgba(180, 140, 255, 0.18);
+    --ul2-link-external: rgba(187, 150, 255, 0.92);
+    --ul2-link-unresolved: rgba(206, 198, 222, 0.56);
+    --ul2-border-faint: rgba(154, 120, 224, 0.2);
+    --ul2-border-soft: rgba(154, 120, 224, 0.36);
+    --ul2-border-glow: rgba(180, 140, 255, 0.55);
+    --ul2-ice-faint: rgba(180, 140, 255, 0.06);
+    --ul2-ice-soft: rgba(180, 140, 255, 0.14);
+    --ul2-ice-medium: rgba(180, 140, 255, 0.28);
+    --ul2-aurora-teal: #7fe5da;
+    --ul2-aurora-violet: #f08ad8;
+    --ul2-aurora-amber: #f4d77a;
+    --ul2-danger: #ff8c9e;
+    --ul2-success: #84e3b4;
+    --ul2-dialogue-color: #f4d77a;
+    --ul2-comment-color: #7fe5da;
+    --ul2-h1-color: #cec6de;
+    --ul2-h2-color: rgba(180, 140, 255, 0.96);
+    --ul2-h3-color: rgba(217, 194, 255, 0.94);
+    --ul2-h4-color: rgba(206, 198, 222, 0.77);
+    --ul2-h5-color: rgba(206, 198, 222, 0.7);
+    --ul2-h6-color: rgba(206, 198, 222, 0.63);
+    --ul2-code-normal: rgba(206, 198, 222, 0.9);
+    --ul2-code-background: rgba(180, 140, 255, 0.08);
+    --ul2-code-comment: rgba(206, 198, 222, 0.58);
+    --ul2-code-string: rgba(132, 227, 180, 0.92);
+    --ul2-code-function: rgba(180, 140, 255, 0.94);
+    --ul2-code-property: rgba(180, 140, 255, 0.84);
+    --ul2-shadow-s-color: rgba(6, 2, 16, 0.55);
+    --ul2-shadow-m-color: rgba(6, 2, 16, 0.68);
+    --ul2-shadow-l-color: rgba(6, 2, 16, 0.82);
+}
+
+body:not(#ul2).ul2-preset-purplehaze.theme-light {
+    --ul2-base-bg: #f5f0fc;
+    --ul2-bg-1: #eee6f8;
+    --ul2-bg-2: #e6dbf4;
+    --ul2-bg-3: #dbcdee;
+    --ul2-bg-4: #cdbae6;
+    --ul2-accent-color: #6d28d9;
+    --ul2-frost-color: #4c1d95;
+    --ul2-accent-rgb: 109, 40, 217;
+    --ul2-caret-color: var(--ul2-accent-color);
+    --ul2-text-normal: #362650;
+    --ul2-text-muted: rgba(54, 38, 80, 0.77);
+    --ul2-text-faint: rgba(54, 38, 80, 0.65);
+    --ul2-bold-color: #362650;
+    --ul2-italic-color: rgba(54, 38, 80, 0.94);
+    --ul2-highlight-bg: rgba(109, 40, 217, 0.16);
+    --ul2-link-external: rgba(107, 38, 215, 0.92);
+    --ul2-link-unresolved: rgba(54, 38, 80, 0.65);
+    --ul2-border-faint: rgba(124, 92, 196, 0.24);
+    --ul2-border-soft: rgba(124, 92, 196, 0.4);
+    --ul2-border-glow: rgba(109, 40, 217, 0.55);
+    --ul2-ice-faint: rgba(109, 40, 217, 0.06);
+    --ul2-ice-soft: rgba(109, 40, 217, 0.13);
+    --ul2-ice-medium: rgba(109, 40, 217, 0.26);
+    --ul2-aurora-teal: #0f766e;
+    --ul2-aurora-violet: #a21caf;
+    --ul2-aurora-amber: #8f5d0a;
+    --ul2-danger: #b3261e;
+    --ul2-success: #2a7844;
+    --ul2-dialogue-color: #8f5d0a;
+    --ul2-comment-color: #0f766e;
+    --ul2-h1-color: #362650;
+    --ul2-h2-color: rgba(109, 40, 217, 0.96);
+    --ul2-h3-color: rgba(76, 29, 149, 0.94);
+    --ul2-h4-color: rgba(54, 38, 80, 0.82);
+    --ul2-h5-color: rgba(54, 38, 80, 0.77);
+    --ul2-h6-color: rgba(54, 38, 80, 0.71);
+    --ul2-code-normal: rgba(54, 38, 80, 0.9);
+    --ul2-code-background: rgba(109, 40, 217, 0.07);
+    --ul2-code-comment: rgba(54, 38, 80, 0.67);
+    --ul2-code-string: rgba(42, 120, 68, 0.92);
+    --ul2-code-function: rgba(109, 40, 217, 0.94);
+    --ul2-code-property: rgba(109, 40, 217, 0.84);
+    --ul2-shadow-s-color: rgba(60, 30, 110, 0.14);
+    --ul2-shadow-m-color: rgba(60, 30, 110, 0.18);
+    --ul2-shadow-l-color: rgba(60, 30, 110, 0.24);
+}
+
+body:not(#ul2).ul2-preset-blackout.theme-dark {
+    --ul2-base-bg: #0e0e0e;
+    --ul2-bg-1: #131313;
+    --ul2-bg-2: #181818;
+    --ul2-bg-3: #202020;
+    --ul2-bg-4: #292929;
+    --ul2-accent-color: #a0a0a0;
+    --ul2-frost-color: #c4c4c4;
+    --ul2-accent-rgb: 160, 160, 160;
+    --ul2-caret-color: var(--ul2-frost-color);
+    --ul2-text-normal: #c0c0c0;
+    --ul2-text-muted: rgba(192, 192, 192, 0.73);
+    --ul2-text-faint: rgba(192, 192, 192, 0.59);
+    --ul2-bold-color: #c0c0c0;
+    --ul2-italic-color: rgba(192, 192, 192, 0.94);
+    --ul2-highlight-bg: rgba(160, 160, 160, 0.18);
+    --ul2-link-external: rgba(167, 167, 167, 0.92);
+    --ul2-link-unresolved: rgba(192, 192, 192, 0.59);
+    --ul2-border-faint: rgba(138, 138, 138, 0.2);
+    --ul2-border-soft: rgba(138, 138, 138, 0.36);
+    --ul2-border-glow: rgba(160, 160, 160, 0.55);
+    --ul2-ice-faint: rgba(160, 160, 160, 0.06);
+    --ul2-ice-soft: rgba(160, 160, 160, 0.14);
+    --ul2-ice-medium: rgba(160, 160, 160, 0.28);
+    --ul2-aurora-teal: #8fb5ae;
+    --ul2-aurora-violet: #a99cc0;
+    --ul2-aurora-amber: #c4b17f;
+    --ul2-danger: #c98f8f;
+    --ul2-success: #93b59b;
+    --ul2-dialogue-color: #c4b17f;
+    --ul2-comment-color: #8fb5ae;
+    --ul2-h1-color: #c0c0c0;
+    --ul2-h2-color: rgba(160, 160, 160, 0.96);
+    --ul2-h3-color: rgba(196, 196, 196, 0.94);
+    --ul2-h4-color: rgba(192, 192, 192, 0.8);
+    --ul2-h5-color: rgba(192, 192, 192, 0.73);
+    --ul2-h6-color: rgba(192, 192, 192, 0.65);
+    --ul2-code-normal: rgba(192, 192, 192, 0.9);
+    --ul2-code-background: rgba(160, 160, 160, 0.08);
+    --ul2-code-comment: rgba(192, 192, 192, 0.61);
+    --ul2-code-string: rgba(147, 181, 155, 0.92);
+    --ul2-code-function: rgba(160, 160, 160, 0.94);
+    --ul2-code-property: rgba(160, 160, 160, 0.84);
+    --ul2-shadow-s-color: rgba(0, 0, 0, 0.55);
+    --ul2-shadow-m-color: rgba(0, 0, 0, 0.68);
+    --ul2-shadow-l-color: rgba(0, 0, 0, 0.82);
+}
+
+body:not(#ul2).ul2-preset-blackout.theme-light {
+    --ul2-base-bg: #ebebeb;
+    --ul2-bg-1: #e4e4e4;
+    --ul2-bg-2: #dcdcdc;
+    --ul2-bg-3: #d1d1d1;
+    --ul2-bg-4: #c3c3c3;
+    --ul2-accent-color: #4a4a4a;
+    --ul2-frost-color: #333333;
+    --ul2-accent-rgb: 74, 74, 74;
+    --ul2-caret-color: var(--ul2-accent-color);
+    --ul2-text-normal: #2d2d2d;
+    --ul2-text-muted: rgba(45, 45, 45, 0.78);
+    --ul2-text-faint: rgba(45, 45, 45, 0.65);
+    --ul2-bold-color: #2d2d2d;
+    --ul2-italic-color: rgba(45, 45, 45, 0.94);
+    --ul2-highlight-bg: rgba(74, 74, 74, 0.16);
+    --ul2-link-external: rgba(74, 74, 74, 0.92);
+    --ul2-link-unresolved: rgba(45, 45, 45, 0.65);
+    --ul2-border-faint: rgba(102, 102, 102, 0.24);
+    --ul2-border-soft: rgba(102, 102, 102, 0.4);
+    --ul2-border-glow: rgba(74, 74, 74, 0.55);
+    --ul2-ice-faint: rgba(74, 74, 74, 0.06);
+    --ul2-ice-soft: rgba(74, 74, 74, 0.13);
+    --ul2-ice-medium: rgba(74, 74, 74, 0.26);
+    --ul2-aurora-teal: #3f6b64;
+    --ul2-aurora-violet: #5f5478;
+    --ul2-aurora-amber: #6f5a1f;
+    --ul2-danger: #8a3a3a;
+    --ul2-success: #3d6b48;
+    --ul2-dialogue-color: #6f5a1f;
+    --ul2-comment-color: #3f6b64;
+    --ul2-h1-color: #2d2d2d;
+    --ul2-h2-color: rgba(74, 74, 74, 0.96);
+    --ul2-h3-color: rgba(51, 51, 51, 0.94);
+    --ul2-h4-color: rgba(45, 45, 45, 0.83);
+    --ul2-h5-color: rgba(45, 45, 45, 0.78);
+    --ul2-h6-color: rgba(45, 45, 45, 0.72);
+    --ul2-code-normal: rgba(45, 45, 45, 0.9);
+    --ul2-code-background: rgba(74, 74, 74, 0.07);
+    --ul2-code-comment: rgba(45, 45, 45, 0.68);
+    --ul2-code-string: rgba(61, 107, 72, 0.92);
+    --ul2-code-function: rgba(74, 74, 74, 0.94);
+    --ul2-code-property: rgba(74, 74, 74, 0.84);
+    --ul2-shadow-s-color: rgba(40, 40, 40, 0.14);
+    --ul2-shadow-m-color: rgba(40, 40, 40, 0.18);
+    --ul2-shadow-l-color: rgba(40, 40, 40, 0.24);
+}
+
 body {
     font-family: var(--ul2-ui-font);
     letter-spacing: var(--ul2-ui-letter-spacing);
@@ -2186,7 +2534,7 @@ body {
 
 ::selection {
     background: var(--ul2-selection-bg);
-    color: var(--text-on-accent);
+    color: var(--ul2-text-normal);
 }
 
 .is-live-preview .cm-line {
@@ -2780,6 +3128,151 @@ button.mod-warning {
     max-width: calc(var(--ul2-max-width) - var(--ul2-zen-narrowing));
 }
 
+.callout:is(
+    [data-callout="typewriter"],
+    [data-callout="draft"],
+    [data-callout="manuscript"]
+) {
+    --_c: var(--ul2-frost-color);
+}
+.callout:is(
+    [data-callout="snowflake"],
+    [data-callout="frost"],
+    [data-callout="winter"]
+) {
+    --_c: var(--ul2-aurora-teal);
+}
+.callout:is(
+        [data-callout="typewriter"],
+        [data-callout="draft"],
+        [data-callout="manuscript"],
+        [data-callout="snowflake"],
+        [data-callout="frost"],
+        [data-callout="winter"]
+    )
+    .callout-icon
+    svg {
+    display: none;
+}
+.callout:is(
+        [data-callout="typewriter"],
+        [data-callout="draft"],
+        [data-callout="manuscript"],
+        [data-callout="snowflake"],
+        [data-callout="frost"],
+        [data-callout="winter"]
+    )
+    .callout-icon::before {
+    content: "";
+    display: block;
+    width: var(--icon-s, 18px);
+    height: var(--icon-s, 18px);
+    background-color: currentColor;
+    -webkit-mask: var(--ul2-icon-typewriter) center / contain no-repeat;
+    mask: var(--ul2-icon-typewriter) center / contain no-repeat;
+}
+.callout:is(
+        [data-callout="snowflake"],
+        [data-callout="frost"],
+        [data-callout="winter"]
+    )
+    .callout-icon::before {
+    -webkit-mask-image: var(--ul2-icon-snowflake);
+    mask-image: var(--ul2-icon-snowflake);
+}
+
+body:not(.ul2-no-hr-snowflake)
+    :is(
+        .markdown-rendered,
+        .markdown-preview-view,
+        .markdown-source-view.mod-cm6
+    )
+    hr {
+    position: relative;
+    height: 1.6em;
+    overflow: visible;
+    background: none;
+}
+body:not(.ul2-no-hr-snowflake)
+    :is(
+        .markdown-rendered,
+        .markdown-preview-view,
+        .markdown-source-view.mod-cm6
+    )
+    hr::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: var(--ul2-hr-height);
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--ul2-hr-color) 18%,
+        var(--ul2-hr-color) 40%,
+        transparent 41%,
+        transparent 59%,
+        var(--ul2-hr-color) 60%,
+        var(--ul2-hr-color) 82%,
+        transparent
+    );
+}
+body:not(.ul2-no-hr-snowflake)
+    :is(
+        .markdown-rendered,
+        .markdown-preview-view,
+        .markdown-source-view.mod-cm6
+    )
+    hr::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1.15em;
+    height: 1.15em;
+    transform: translate(-50%, -50%);
+    background-color: var(--ul2-frost-color);
+    opacity: 0.8;
+    -webkit-mask: var(--ul2-icon-snowflake) center / contain no-repeat;
+    mask: var(--ul2-icon-snowflake) center / contain no-repeat;
+}
+
+.status-bar-item.plugin-word-count::before {
+    content: "";
+    display: inline-block;
+    width: 1.1em;
+    height: 1.1em;
+    margin-right: 0.45em;
+    vertical-align: -0.2em;
+    background-color: currentColor;
+    -webkit-mask: var(--ul2-icon-typewriter) center / contain no-repeat;
+    mask: var(--ul2-icon-typewriter) center / contain no-repeat;
+}
+body.ul2-no-statusbar-icon .status-bar-item.plugin-word-count::before {
+    display: none;
+}
+
+.workspace-leaf-content .inline-title::before {
+    content: "";
+    display: inline-block;
+    width: 0.62em;
+    height: 0.62em;
+    margin-right: 0.4em;
+    vertical-align: 0.02em;
+    background-color: var(--ul2-frost-color);
+    opacity: 0.55;
+    -webkit-mask: var(--ul2-icon-typewriter) center / contain no-repeat;
+    mask: var(--ul2-icon-typewriter) center / contain no-repeat;
+}
+body.ul2-title-icon-snowflake .workspace-leaf-content .inline-title::before {
+    -webkit-mask-image: var(--ul2-icon-snowflake);
+    mask-image: var(--ul2-icon-snowflake);
+}
+body.ul2-title-icon-none .workspace-leaf-content .inline-title::before {
+    display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
     :root {
         --ul2-transition-speed: 0ms;
@@ -2796,7 +3289,7 @@ button.mod-warning {
 
 @media screen and (max-width: 768px) {
     :root {
-        --ul2-font-size: 15px;
+        --ul2-font-size: 16px;
         --ul2-max-width: 100%;
     }
 }
